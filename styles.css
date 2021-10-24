@@ -11,7 +11,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-gap: 2px;
 }
 
@@ -31,6 +31,8 @@ h1{
     font-size: 18px;
     grid-row: 1;
     display: inline;
+    position: relative;
+    top: 10px;
 }
 
 li{
@@ -38,6 +40,9 @@ li{
     font-size: 18px;
     display: inline;
     grid-row: 1;
+    position: relative;
+    right: -100px;
+    top: 5px;
 }
 
 a{
@@ -125,37 +130,77 @@ a:hover {
     border-radius: 5px;
     background-color: #48BB78;
     color: white;
-    width: 150px;
+    width: 100px;
     text-align: center;
+    position: relative;
+    top: 80px;
+    left: 50px;
 }
 
 
 .stories h2{
     grid-row: 6;
+    color: #5A67D8;
 }
 
 article{
     grid-row: 7;
+    padding: 30px;
 }
 
 article img{
     float:left;
-    display: grid;
-    grid-template-areas: 
-        "article"
-        "article";
-    grid-row-start: 7;
-    grid-row-end: 8;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
-.article-body{
+.article-body{  
     float: right;
     text-align: justify-all;
     display: inline;
 }
 
+.article-body a{
+    color: #5A67D8;
+}
 
+.newsletter{
+    background-color: #48BB78;
+    padding: 50px;
+    color: white;
+    align-content: center;
+}
 
+.newsletter h3{
+    position: relative;
+    right: -300px;
+    top: -50px;
+}
 
+.newsletter p{
+    position: relative;
+    text-align: justify;
+}
 
+.form-group input{
+    position: relative;
+    right: 435px;
+    top: 80px;
+    border-color: white;
+    height: 30px;
+    border-radius: 5px;
+    width: -400px;
+}
+
+button{
+    position: relative;
+    top: -435px;
+    align-content: center;
+}
+
+footer{
+    background-color: #4A5568;
+    color: white;
+}
 
